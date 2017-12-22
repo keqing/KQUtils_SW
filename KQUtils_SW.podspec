@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KQUtils_SW"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "swift版的工具类集合."
 
   # This description is used to generate tags and improve search results.
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "KQUtils_SW/KQUtils_SW/Classes/**/*"
+  s.source_files  = "KQUtils_SW/KQUtils_SW/**/*"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -106,7 +106,10 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-
+  
+  s.resource_bundles = {
+        'Resource' => ['KQUtils_SW/KQUtils_SW/*'],
+   } 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
