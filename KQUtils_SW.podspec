@@ -105,11 +105,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+   s.resources = "Resource"
   
-  s.resource_bundles = {
-        'Resource' => ['KQUtils_SW/KQUtils_SW/*'],
-   } 
+  # s.resource_bundles = { 'Resource' => ['KQUtils_SW/KQUtils_SW/Resource'],} 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
@@ -120,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = "UIKit", "Foundation","CommonCrypto"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
