@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "KQUtils_SW/KQUtils_SW/**/*.{h,swift}"
-  s.exclude_files = "Classes/Exclude"
-
+  #s.exclude_files = "Classes/Exclude"
+	
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -134,5 +134,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "CommonCrypto"
 
 end
